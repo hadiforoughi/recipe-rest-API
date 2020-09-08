@@ -78,5 +78,5 @@ class ModelTests(TestCase):
         mock_uuid.return_value = uuid
         file_patch = models.recipe_image_file_patch(None,'myimage.jpg')
 
-        exp_patch = f'static/img/recipe/{uuid}.jpg'
+        exp_patch = f'media/img/recipe/{uuid}.jpg'
         self.assertEqual(file_patch,exp_patch)
